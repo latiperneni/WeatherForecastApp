@@ -1,0 +1,29 @@
+
+    <h4> Forecast the weather by city</h4>
+    <p>Temperature of your location is </p>
+
+<div class="row">
+    <div class="col-md-12">
+
+        <div class="btn-group" ng-model="TempConvertUnits" role="group">
+            <span>Please choose the convenient Temperature units : </span>
+            <a ng-click="setTempConvertUnits('F')">F</a>
+            <span>/</span>
+            <a ng-click="setTempConvertUnits('C')">C</a>
+        </div>
+        <table-result temp-conversion-for-directive= "{{tempConversionForDirective}}" iterate-list=currentPositionForecastDataList></table-result>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+            <label>please enter a city name</label>
+            <input type=text ng-model="cityName" autocomplete-cityname/>
+            <a href="#/forecast" class="btn btn-primary" ng-click="setCityName()">search</a>
+        </div>
+    </div>
+</div>
+
+
+

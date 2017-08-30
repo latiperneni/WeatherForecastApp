@@ -1,0 +1,16 @@
+<h4>Forecast data of<span>{{cityName |  uppercase}}</span> is :</h4>
+
+<div class="row">
+    <div class="col-md-12">
+
+        <div class="btn-group" ng-model="TempConvertUnits" role="group" >
+            <span>Please choose the convenient Temperature units : </span>
+            <a  ng-click="setTempConvertUnits('F')">F</a>
+            <span>/</span>
+            <a  ng-click="setTempConvertUnits('C')">C</a>
+        </div>
+
+        <table-result temp-conversion-for-directive= "{{tempConversionForDirective}}" iterate-list=userSelectedCityForeCastDataList></table-result>
+
+    </div>
+</div>

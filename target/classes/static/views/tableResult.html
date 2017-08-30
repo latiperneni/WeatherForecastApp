@@ -1,0 +1,18 @@
+<table class="table table-bordered table-hover ">
+<tr>
+    <th>Date</th>
+    <th>Weather Description</th>
+    <th>Min Temperature(F/C)</th>
+    <th>Max Temperature(F/C)</th>
+    <th>Pressure</th>
+    <th>Humidity</th>
+</tr>
+<tr ng-cloak ng-repeat="var in iterateList">
+ <td>{{var.dt * 1000| date:'fullDate'}}</td>
+ <td>{{var.weather[0].description}}</td>
+ <td>{{var.temp.min | tempConversion : tempConversionForDirective | number:2}}</td>
+<td>{{var.temp.max | tempConversion : tempConversionForDirective | number:2}}</td>
+ <td>{{var.pressure}}</td>
+ <td>{{var.humidity}}</td>
+</tr>
+</table>

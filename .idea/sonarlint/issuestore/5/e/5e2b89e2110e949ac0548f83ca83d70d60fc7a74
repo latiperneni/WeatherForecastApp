@@ -1,0 +1,4 @@
+
+msquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(öÅè²
+Tsquid:S1118":Add a private constructor to hide the implicit public one.(§÷öÍüÿÿÿÿ
+[squid:UselessImportCheck"2Remove this unused import 'javax.xml.ws.Endpoint'.(¤šÔş8¡ğ¯Û¦+
