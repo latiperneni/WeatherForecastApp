@@ -8,7 +8,7 @@ forecastApp.factory('getForecastDataFromGeoCoordinates', ['$http', '$q', functio
 
         getCurrentLocationForecastData: function (lat, lon) {
             var deffered = $q.defer();
-            $http.get('http://api.openweathermap.org/data/2.5/forecast/daily?&lat=' + lat + '&lon=' + lon + '&APPID=appid')
+            $http.get('http://api.openweathermap.org/data/2.5/forecast/daily?&lat=' + lat + '&lon=' + lon + '&APPID=a48e2db48a06dc414c3d4bf8a2016366')
                 .success(function (data) {
                     deffered.resolve(data);
                 });
@@ -23,7 +23,7 @@ forecastApp.factory('getForecastData', ['$http', '$q', function ($http, $q) {
 
         getForecastDatafromcityName: function (cityName) {
             var deffered = $q.defer();
-            $http.get('http://api.openweathermap.org/data/2.5/forecast/daily?&q=' + cityName + '&APPID=appid')
+            $http.get('http://api.openweathermap.org/data/2.5/forecast/daily?&q=' + cityName + '&APPID=a48e2db48a06dc414c3d4bf8a2016366')
                 .success(function (data) {
                     deffered.resolve(data);
                 });
